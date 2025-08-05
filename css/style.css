@@ -1,0 +1,791 @@
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+}
+
+body{
+    background-color: #f7f6ec;
+    line-height: 1.5em;
+}
+
+h1{
+    font-family: 'Plush Trial', sans-serif;    
+}
+
+.main-menu{
+    width: 100%;
+    position: relative;
+    
+}
+
+#ozeum{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: lowercase;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#ozeum:hover {
+    color: #ebe9cf;
+    background-color: #1e1e19;
+    height: auto;
+}
+
+/*links*/
+#info{
+    color: #2e2e26;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS',sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+}
+
+#info:hover{
+    color: #c5a04e;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    background-color: #1e1e19;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.nav-bar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+
+.nav-bar ul li{
+    float: none;
+    display: inline-block; 
+}
+
+.nav-bar ul li:nth-child(1){
+    float: left;
+}
+.nav-bar ul li:nth-child(2){
+    float: left;
+}
+.nav-bar ul li:nth-child(3){
+    float: left;
+}
+
+.nav-bar ul li:nth-child(4){
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.nav-bar ul li a {
+    font-family: 'Trebuchet MS',sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color:#ebe9cf;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 30px 30px;
+}
+
+.nav-bar ul li a:hover{
+    color: #c5a04e;
+    background-color: #13130d;
+    height: 200px;
+}
+
+.hero-section{
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    background-image: url(../images/defaults/default_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.hero-title{
+    color:#ebe9cf;
+    font-family: 'Plush Trial', sans-serif;
+    line-height: 1.2;
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 55px;
+}
+
+
+.exhibition-card-list { 
+    max-width: 1200px; margin: 40px auto; 
+}
+.exhibition-card { 
+    display: flex; 
+    align-items: flex-start;
+    background: #f7f6ec; 
+    margin-bottom: 60px; 
+    padding: 25px 25px; 
+}
+.exhibition-card-image { 
+    flex: 0 0 400px; 
+    margin-left: 40px; 
+}
+.exhibition-card-image img { 
+    width: 370px; 
+    height: 250px; 
+    object-fit: cover;
+}
+/*
+.exhibition-card-image img:hover {
+    opacity: 0.8;
+}*/
+
+.exhibition-card-content { 
+    flex: 1; 
+    padding-right: 32px; 
+}
+.exhibition-card-title { 
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    margin-bottom: 12px; 
+    margin-top: 25px; 
+    font-family: 'Trebuchet MS',sans-serif; 
+}
+
+.exhibition-card-title a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.exhibition-card-title a:hover {
+    color: #c5a04e;
+}
+
+.exhibition-card-dates { 
+    color: #888; 
+    font-size: 1rem; 
+    margin-bottom: 8px; 
+    font-family: 'Trebuchet MS',sans-serif; 
+}
+.exhibition-card-description { 
+    font-size: 1.15rem; 
+    color: #807e7e; 
+    margin-top: 20px; 
+    
+}
+
+.exhibition-card-artist{
+    color: #000;
+    font-family: 'Trebuchet MS',sans-serif; 
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.search-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #efeee3;
+    padding: 24px 0 24px 0;
+    margin: 0 0 32px 0;
+}
+.search-input {
+    flex: 1;
+    max-width: 75%;
+    padding: 12px 20px;
+    border: 2px solid #d3d1c2;
+    border-radius: 40px;
+    font-size: 1rem;
+    background: #f9f8f1;
+    color: #6b6b4e;
+    outline: none;
+    margin-right: 20px;
+    transition: border 0.2s;
+}
+.search-input:focus {
+    border-color: #c5a04e;
+}
+.search-btn {
+    background: #c5a04e;
+    color:#ebe9cf;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-radius: 50px;
+    padding: 30px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+    align-items: center;
+    width: 170px;
+    height: 70px;
+}
+.search-btn:hover {
+    background: #13130d;
+    color:#ebe9cf;
+}
+
+/*exhibition info page*/
+
+.exhibition-detail-section img {
+    padding: 7%;
+    padding-bottom: 0%;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto 24px auto; 
+}
+
+
+
+.exhibition-detail-content p {
+    text-align: justify;
+    max-width: 66%; 
+    margin: 24px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.exhibition-details-col p {
+    text-align: left;
+    margin-left: 0px;
+
+}
+
+.exhibition-meta-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+    padding: 30px 0;
+}
+
+.exhibition-details-col {
+    min-width: 220px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.exhibition-details-col h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+.exhibition-details-col a {
+    border: none;
+    border-top: 2px solid #222;
+    margin: 0 0 1em 0;
+    width: 80%;
+}
+
+.exhibition-details-col img {
+    display: block;
+    margin-left: 30px;
+    margin-top: 0px;
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+
+}
+
+.exhibition-detail-content a{
+    margin-left: 250px;
+}
+
+
+.artist-pfp,.main-content{
+    margin-top: 140px;
+    margin-left: 60px;
+    padding-top: 0;
+
+}
+
+.main-content h2{
+    font-size: 50px;
+} 
+
+.main-content p{
+    font-size: 18px;  
+}
+
+/*artists - display*/
+.artist-grid-section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 24px;
+    padding: 40px;
+    margin: 40px auto;
+}
+
+.artist-card {
+    text-align: center;
+}
+
+.artowork-title,
+.price {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.artist-card img {
+    width: 370px;
+    height: 474px;
+    object-fit: cover;
+}
+/*
+.artist-card img:hover {
+    opacity: 0.85;
+}*/
+
+.artist-name {
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+}
+
+.artist-name:hover{
+    color:  #c5a04e;
+}
+
+
+/*auth */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 350px;
+    margin: 150px auto 0 auto;
+    padding: 32px 24px;
+    background: #faf9f6;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.auth-form button[type="submit"] {
+    padding: 10px 0;
+    background: #2e2e26;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.auth-form button[type="submit"]:hover {
+    background: #c5a04e;
+    color: #fff;
+}
+
+.auth-form a{
+    color: #c5a04e;
+    text-decoration: none;
+}
+
+/*shop*/
+.shop-grid-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center; /* centriraj cele redove */
+    gap: 24px;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.artowork-title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+    margin: 18px 0 8px 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.artwork-price {
+    font-size: 1.5rem;
+    font-weight: 540;
+    color: #c5a04e;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.artwork-img {     
+    padding: 20px;            
+    width: fit-content; 
+    margin-left: 100px;  
+    margin-top: 100px; 
+    margin-bottom:100px;
+}
+
+.artwork-info {
+    text-align: left;
+    margin-left: 100px;  
+    margin-top: 200px; 
+    margin-bottom:100px;
+}
+.artwork-title,
+.artwork-price{
+    padding: 10px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.artwork-description{
+    padding: 10px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    max-width: 680px;
+    font-size: 20px;
+    color: #888;
+}
+
+
+input[type="number"] {
+    border: 1px solid #c9c8bf;
+    background-color: #f7f6ec;;
+    border-radius: 50px;
+    padding: 10px 30px; 
+    width: 110px;
+    height: 55px;
+    font-size: 17px;
+    color: #888;    
+    text-align: center;
+
+}
+
+
+.buy-btn{
+    background: #c5a04e;
+    color:#ebe9cf;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+    align-items: center;
+    width: 150px;
+    height: 55px;
+    margin-left: 20px;
+}
+
+.buy-btn:hover{
+    background: #13130d;
+    color:#ebe9cf;
+}
+
+.hero-section-home{
+    width: 100%;
+    height: 720px;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.hero-info {
+    text-align: center;
+    color: #ebe9cf;
+}
+
+.hero-info a {
+    color: #2e2e26;
+    padding: 20px 50px;
+    border-radius: 25px;
+    background-color: #ebe9cf;
+}
+
+.hero-info a:hover {
+    color: #efede0;     
+    background-color: #13130d;
+    border-width: 30px;
+}
+
+#info-button{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS',sans-serif;
+    letter-spacing: 1px;
+}
+
+#dates {
+    font-size: 20px;
+}
+
+#artist-name {
+    font-family: 'Plush Trial', sans-serif;
+    line-height: 1.2;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.welcome-section{
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    height: 700vp;
+    background-color: #efede0;
+    background-image: url(../images/defaults/welcome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-text{
+    padding: 10%;
+    padding-bottom: 10%;
+}
+
+.welcome-message{
+    line-height: 1.2;
+    font-weight: bold;
+    font-size: 50px;                                     
+}
+
+.welcome-info{
+    line-height: 1.5;
+    word-spacing: 2px;
+    text-align: left;
+    font-size: 25px;
+    color: gray;
+}
+
+
+.upcoming-section {
+    max-width: 80%;
+    margin: 100px auto;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.section-divider {
+    border: none;
+    border-top: 2px solid;
+    margin-bottom: 32px;
+}
+
+.section-image {
+    max-width: 100%;
+}
+
+
+
+
+.visitor-section {
+    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0d0d0b;
+    color: #ebe9cf;
+
+}
+
+.visitor-image {
+    flex: 1 1 50%;
+    min-width: 300px;
+}
+
+.visitor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.visitor-info {
+    flex: 1 1 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.visitor-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+    color: #ebe9cf;
+}
+
+.info-group {
+    margin-bottom: 40px;
+}
+
+.info-group h4 {
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+#buy-ticket{
+    color: #ebe9cf;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS',sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+}
+
+/* user */
+.profile-wrapper {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+}
+.profile-wrapper h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 32px;
+    margin-top: 70px;
+}
+.profile-cards {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.profile-card {
+    background: #f3f1e7;
+    padding: 32px 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0001;
+    flex: 1 1 320px;
+    min-width: 320px;
+    max-width: 400px;
+}
+.profile-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 18px;
+}
+.profile-entry {
+    border: 1px solid #e0dfd7;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    background: #fff;
+}
+.profile-entry ul {
+    margin: 0 0 0 18px;
+}
+.profile-entry li {
+    margin-bottom: 4px;
+}
+.cart-warning {
+    color: red;
+    margin-top: 10px;
+}
+.cart-total {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.cart-order-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.cart-order-button[disabled] {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+
+.ticket-purchase-section {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto; 
+    padding: 25px;
+    background-color: #efeee3;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-purchase-section input[type="date"],
+.ticket-purchase-section select{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #efeee3;
+    margin-top: 20px;
+}
+
+.ticket-purchase-section label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
