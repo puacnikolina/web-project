@@ -1,4 +1,4 @@
-# 🏛️ Ozeum – Museum Management System
+# Art Gallery Management System
 
 > **📚 Web Programming Course Project**  
 > This project is a student assignment for the *Web Programming* course.  
@@ -7,7 +7,7 @@
 
 ## ✨ Project Overview
 
-**Ozeum** is a lightweight PHP-based museum management system that allows both visitors and administrators to interact with museum content. It includes core features such as:
+This project is a lightweight PHP-based art gallery management system that allows both visitors and administrators to interact with gallery's content. It includes core features such as:
 
 - Exhibition and artwork management  
 - Ticket purchasing and category handling  
